@@ -66,7 +66,7 @@ public class Startup
 				{
 					// アプリ起動中の例外の表示
 					System.out.println();
-					System.out.println("(# ﾟДﾟ) アプリ起動に失敗！" + ex.getCause().getMessage());
+					System.out.println("(# ﾟДﾟ) アプリ起動に失敗！" + ex.getMessage());
 				}
 			}
 			else
