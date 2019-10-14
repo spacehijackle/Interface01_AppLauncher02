@@ -76,7 +76,6 @@ public class MenuItem
 			_launcher.launch(option);
 
 			// アプリ起動の証跡取り
-			//_tracer.onAppLaunched(this);
 			_tracer.capture(_launcher);
 		}
 		catch(Exception ex)
