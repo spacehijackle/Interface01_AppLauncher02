@@ -106,7 +106,10 @@ public class Menu
 		 */
 		public void capture(AppLauncher launcher)
 		{
-			_historyLauncher.storeAsHistory(launcher);
+			if(_historyLauncher != null)
+			{
+				_historyLauncher.storeAsHistory(launcher);
+			}
 		}
 	}
 }
