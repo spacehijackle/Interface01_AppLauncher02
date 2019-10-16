@@ -40,7 +40,7 @@ public class HistoryLauncher implements AppLauncher
 	public void storeAsHistory(AppLauncher launcher)
 	{
 		// 追加対象が当クラスの場合ははじく
-		if(launcher == this) return;
+		if(launcher instanceof HistoryLauncher) return;
 
 		// 同じアプリランチャーが連続する場合ははじく
 		if(hasHistory() && launcher == last()) return;
