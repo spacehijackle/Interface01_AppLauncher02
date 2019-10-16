@@ -50,8 +50,8 @@ public class Menu
 	 */
 	public void add(HistoryLauncher historyLauncher)
 	{
-		add((AppLauncher)historyLauncher);
 		_historyLauncher = historyLauncher;
+		add((AppLauncher)historyLauncher);
 	}
 
 	/**
